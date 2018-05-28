@@ -1,0 +1,49 @@
+<h1>Inicio de Sesion</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="well">
+
+                <form method="post">
+                    <label for="username" >Username</label>
+                    <input type="text" name="username" placeholder="Enter a Username" class="form-control" [(ngModel)]="ingreso.username" required>
+
+
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" class="form-control" [(ngModel)]="ingreso.password" required >
+
+                    <button type="submit" name="login" (click)="getUser()" (click)="ingresoUser()" >Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" > Remember me
+                        <button type="button" class="cancelbtn" [disabled]="!listo" >Cancel</button>
+                        <br>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </label>
+                </form>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Inicio de secion con Exito</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+<h1>Inicio de Sesion</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="well">
+
+                <form method="post">
+                    <label for="username" >Inserte Codigo</label>
+                    <input type="text" name="username" placeholder="Codigo" class="form-control" [(ngModel)]="dataConfirm.code" required>
+
+                    <button type="submit" name="confirm" (click)="confirmarUsuario()" >Confirmar Codigo</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

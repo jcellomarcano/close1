@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+</div>
+
+<h2>Login form</h2>
+
+  <form action="app.component.html" method="post">
+    <div class="imgcontainer">
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="Enter a Username">
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit" name="login">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" [disabled]="!listo" (click)="haciendoClick()">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+
+  </form>
+
+
+<div >
+<hr />
+<input type="text" placeholder="email" [(ngModel)]="email">
+<br>
+Mi correo es  {{email+ : + (a+b)}}
+</div>
+-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active" routerLinkActive="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li routerLinkActive="active"><a routerLink="/usuarios">Page 1-1</a></li>
+          <li routerLinkActive="active"><a routerLink="/detalle">Page 1-2</a></li>
+          <li routerLinkActive="active"><a routerLink="/coontacto">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active"><a routerLink="/singup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li routerLinkActive="active"><a routerLink="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+<!--
+<ul>
+  <ng-container *ngFor="let nombre of nusuarios; let i = index" [ngSwitch]="nombre.cercania">
+    <a contar-clicks><li [ngStyle]="{color: (nombre.active) ? 'black' : 'red'}" [ngClass]="{numero_par: (i+1) % 2 !== 0}" [resaltar]="nombre.plan">
+      {{nombre.name}} -
+      <span *ngSwitchCase="1" [ngStyle]="{color:'green'}">Muy Cercano</span>
+      <span *ngSwitchCase="2" [ngStyle]="{color:'grey'}">Cercano</span>
+      <span *ngSwitchCase="3" [ngStyle]="{color:'pink'}">Lejano</span>
+    </li></a>
+  </ng-container>
+</ul>
+-->
